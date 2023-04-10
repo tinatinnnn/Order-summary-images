@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@700&family=Red+Hat+Display:ital,wght@0,500;0,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.ilustration-desktop{
+  display: none;
+}
+body{
+  font-family: 'Red Hat Display', sans-serif;
+  min-height: 100vh;
+  background-image: url(../img/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color:#e0e8ff;
+  position: relative;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+
+}
+.container{
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    max-width: 450px;
+    background-color:#FFFFFF ;
+    border-radius: 20px;
+    overflow: hidden;
+
+}
+.header{
+  width: 375px;
+  padding-bottom: 32px;
+  box-shadow: 0px 40px 40px -20px #0D30BD27;
+
+  
+}
+.hero{
+  width: 327px;
+
+}
+.text-content{
+  text-align: center;
+}
+.title{
+  padding-top: 32px;
+  font-weight: 900;
+  line-height: 29.11px;
+  font-size: 1.375rem;
+}
+.subtitle{
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 25px;
+  padding-left: 22px;
+  padding-right: 22px;
+  text-align: center;
+  padding-top: 16px;
+}
+.annual{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: var(--Soft-Blue);
+  margin-left: 24px;
+  margin-right: 24px;
+  border-radius: 11px;
+  margin-top: 24px;
+}
+.icon{
+  padding-top: 30px;
+  padding-bottom: 16px;
+}
+.item h2{
+  padding-top: 21px;
+  font-size: 0.875rem;
+  font-weight: 900;
+  color:var(--black);
+  line-height:29.11px ;
+  text-transform: capitalize;
+}
+p{
+  font-weight: 500;
+  font-size: 0.875rem;
+  color:var(--gray);
+}
+.change{
+  padding-top: 20px;
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height:17.2px ;
+  color: var(--blue);
+
+}
+.btn-click{
+  text-align: center;
+  padding-top: 39px;
+}
+.btn{
+  background-color: var(--blue);
+  color: var(--white);
+  text-decoration: none;
+  padding-left: 88px;
+  padding-right: 88px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-radius:11px ;
+  box-shadow: 0px 20px 20px 0px #382AE131;
+
+}
+.cancel{
+  padding-top: 32px;
+  font-weight: 900;
+  line-height:19.85px ;
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  
+    .container{
+        width: 1440px;
+    }
+    .header{
+      width: 450px;
+    }
+    /*.hero{
+      width: 450px;
+    }*/
+    
+    .annual{
+      width: 354px;
+      margin-left: 48px;
+     
+    }
+    .btn-click{
+      margin-top: 32px;
+    }
+    .btn{
+      padding-left: 102px;
+      padding-right: 102px;
+    }
+    .change .btn {
+      cursor: pointer;
+    }
+    .cancel{
+      cursor: pointer;
+    }
+    .btn:hover{
+      background-color: var(--bluer);
+    }
+    .cancel:hover{
+      color: var(--black);
+
+    }
+    .change:hover{
+      color: var(--hover);
+    }
+
+}
